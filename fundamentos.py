@@ -45,33 +45,3 @@ print("Hola, " + nombre_completo + " tienes " + str(edad) + " años")
 print(f"hola {nombre_completo}", "tienes {edad}, anos")
 
 
-#operadores aritemticos
-a = float(input("ingrese su primer valor "))
-b = float(input("ingrese su segundo valor "))
-
-print("eliga que operacion quiere realizar")
-
-tipo_de_operacion=input(int("ingrese el tipo de operacion que requiere"))
-if tipo_de_operacion == 1:
-    print("suma")
-elif tipo_de_operacion == 2:
-    print("resta")
-elif tipo_de_operacion == 3:
-    print("multiplicacion")
-elif tipo_de_operacion == 4:
-    print("division")
-elif tipo_de_operacion == 5:
-    print("modulo")
-elif tipo_de_operacion == 6:
-    print("potencia")
-
-
-
-suma = (a+b)
-resta = (a-b)
-multiplicacion=(a*b)
-division=(a/b)
-modulo=(a%b)
-potencia=(a**b)
-
-print("la suma es: ", suma)
