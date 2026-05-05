@@ -26,4 +26,4 @@ elif operacion=="5":
     resultado=int(primer_valor)**int(segundo_valor)
     print("el resultado de la potencia es: ", resultado)
 else:
-    print("operacion no valida")
+    print("operacion no valida") 
