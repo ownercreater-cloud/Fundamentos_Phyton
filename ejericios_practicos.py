@@ -1,9 +1,5 @@
 #  ejercicio 1
 
-from math import e
-from unittest import result
-
-
 nombre= "David"
 producto= 20000
 promedio_asignatura= 4.5
