@@ -4,9 +4,6 @@
 
 #Estrcutura de un diccionario
 
-from xmlrpc.server import DocCGIXMLRPCRequestHandler
-
-
 diccionario = {
     "clave 1": "valor 1",
     "clave 2": "valor 2",
@@ -91,6 +88,8 @@ aprendiz = {
     "programa": "ADSO",
     "ficha": "3321349",
     "edad": "18"
+    }
+}
 
 aprendiz_2 = {
     "nombre": "miguel",
@@ -98,13 +97,11 @@ aprendiz_2 = {
     "programa": "ADSO",
     "ficha": "3321349",
     "edad": "19"
-    }
 }
 
-print(aprendiz["aprendiz_1:]["programa])
+print(aprendiz["aprendiz_1":]["programa"])
 
 for aprendiz,datos in aprendiz.items():
     print(f"{aprendiz}")
     for clave, valor in datos.items():
-        print(f{clave}:{valor})
-        
+        print(f"{clave}:{valor}")

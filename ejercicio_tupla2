@@ -1,0 +1,33 @@
+# actividad2_diccionarios.py
+
+grupo = {
+    101: {"nombre": "Ana", "edad": 20, "notas": [3.5, 4.0, 2.8, 3.9], "ciudad": "Bogota"},
+    102: {"nombre": "Luis", "edad": 22, "notas": [2.5, 3.0, 2.9, 3.1], "ciudad": "Medellin"},
+    103: {"nombre": "Maria", "edad": 19, "notas": [4.5, 4.2, 4.8, 4.0], "ciudad": "Cali"},
+    104: {"nombre": "Pedro", "edad": 21, "notas": [3.0, 3.2, 3.5, 3.8], "ciudad": "Barranquilla"}
+}
+
+# reporte normal
+print("Reporte de Aprendices")
+for ficha, datos in grupo.items():
+    promedio = sum(datos["notas"]) / len(datos["notas"])
+    estado = "APROBADO" if promedio >= 3.0 else "REPROBADO"
+    print("Ficha:", ficha, "Nombre:", datos["nombre"], "Edad:", datos["edad"],
+          "Promedio:", round(promedio, 2), "Estado:", estado)
+
+# agregar y actualizar
+grupo[105] = {"nombre": "Sofia", "edad": 23, "notas": [4.0, 3.8, 4.2, 3.9], "ciudad": "Tunja"}
+grupo[102]["ciudad"] = "Cartagena"
+
+# crear lista con promedios
+print("Lista ordenada por promedio")
+lista_promedios = []
+for ficha, datos in grupo.items():
+    promedio = sum(datos["notas"]) / len(datos["notas"])
+    lista_promedios.append((promedio, ficha, datos))
+
+# ordenar la lista por el primer elemento (promedio) de mayor a menor
+lista_promedios.sort(reverse=True)
+
+for promedio, ficha, datos in lista_promedios:
+    print(datos["nombre"], "- Promedio:", round(promedio, 2))
