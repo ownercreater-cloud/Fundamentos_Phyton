@@ -60,7 +60,7 @@ elif promedio_semana2 > promedio_semana1:
 else:
     print("\nAmbas semanas tuvieron el mismo promedio de temperatura")
 
-# Lista de gestion de lista de reproduccion semanal
+#actividad 3 Lista de gestion de lista de reproduccion semanal
 
 # 1 
 canciones = ["Eclipse", "Horizonte", "Luz Interna", "Viaje Sonoro", "Reflejos"]
